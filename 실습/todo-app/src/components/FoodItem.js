@@ -1,0 +1,14 @@
+import React from "react";
+
+//props 부모 컴포넌트가 보내준 데이터가 담긴 객체
+const FoodItem = ({ foodName, price }) => {
+  return (
+    <li>
+      <a href="*">
+        {foodName}, {price}원
+      </a>
+    </li>
+  );
+};
+
+export default FoodItem;
