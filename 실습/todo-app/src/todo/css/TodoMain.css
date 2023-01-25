@@ -1,0 +1,11 @@
+
+
+
+.todo-list{
+    padding: 20px 32px 48px;
+
+    /* 자식이 부모길이보다 긴 경우 숨기기 */
+
+    max-height: 400px;
+    overflow: auto;
+}

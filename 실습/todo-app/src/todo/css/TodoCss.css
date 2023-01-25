@@ -12,5 +12,33 @@
 
     /* 박스 x축 중앙 정렬 : 마진 좌우값을 auto로 설정 */
     margin: 100px auto;
-    
+   
+    position: relative;
+
+}
+
+
+
+/* h1{} 
+이러면 점수가 너무 낮음 1점
+*/
+
+header h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: #343a40;
+}
+
+header .day{
+    font-size: 21px;
+    color: #868e96;
+    /* background: red; */
+    margin-top: 6px;
+    margin-bottom: 40px;
+}
+
+header .tasks-left{
+    font-size: 18px;
+    font-weight: bold;
+    color: #20c997;
 }

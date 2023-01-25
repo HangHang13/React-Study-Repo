@@ -1,0 +1,83 @@
+
+
+
+.todo-item{
+    display: flex;
+    padding: 12px 0;
+  
+    align-items: center;
+    
+
+}
+
+.todo-item .check-circle{
+    width: 32px;
+    height: 32px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 24px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    cursor: pointer;
+
+    /* color: green; */
+}
+
+.todo-item .check-circle:hover{
+    border: 1px solid #38d9a9;
+    color: #38d9a9;
+}
+
+.todo-item .check-circle.active {
+    border: 1px solid #38d9a9;
+    color: #38d9a9;
+}
+
+.todo-item  .text{
+    font-size: 21px;
+    color: #495057;
+    flex: 1;
+
+}
+
+.todo-item  .remove{
+    font-size: 28px;
+    color: #ccc;
+    cursor: pointer;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 10px;
+
+    display: none;
+
+}
+
+.todo-item:hover  .remove{
+    display: block;
+ 
+}
+.todo-item .text{
+    font-size: 21px;
+    color: #495057;
+    flex: 1;
+
+}
+.todo-item .text.finish{
+    font-size: 21px;
+    text-decoration: line-through;
+
+}
+
+.todo-item .remove:hover{
+
+    color: #f51b4f;
+}
