@@ -21,9 +21,8 @@ function App() {
   // Changes the snowflake color
   color="blue"
   // Applied to the canvas element
-  style={{ background: '#fff', position: 'fixed',
-  width: '100vw',
-  height: '100vh' }}
+  style={{ background: '#fff', 
+  ZIndex: -10 }}
   // Controls the number of snowflakes that are created (default 150)
   snowflakeCount={250}
   wind={[-0.5, 2.0]}
