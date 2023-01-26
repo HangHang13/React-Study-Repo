@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import TodoHeader from "./TodoHeader";
 import TodoInput from "./TodoInput";
 import TodoMain from "./TodoMain";
-import { useDispatch, useSelector } from "react-redux";
-import {todoListGet} from "./store/todo.jsx"
 
 //css로딩
 import "./css/TodoCss.css";
 
 const TodoTemplate = () => {
+
   const API_BASE_URL = "http://localhost:8080/api/todos/";
 
   const [todos, setTodos] = useState([]);
@@ -56,7 +55,7 @@ const TodoTemplate = () => {
       .then((res) => {
         setTodos(res.todos);
       });
-      useDispatch(todoListGet)
+    // dispatch(todoListGet)
   }, []);
   return (
     <div className="todo-template">
