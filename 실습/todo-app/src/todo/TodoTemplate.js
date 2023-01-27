@@ -63,6 +63,8 @@ const TodoTemplate = () => {
         {
         if (res.status===403){
           alert("로그인이 필요한 서비스입니다.")
+          //로그인으로 리다이렉트
+          window.location.href='/login'
           return;
         }else if (res.status===500){
           alert("서버에러입니다.")

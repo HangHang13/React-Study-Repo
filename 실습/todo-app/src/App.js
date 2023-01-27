@@ -1,5 +1,5 @@
 import "./App.css";
-
+import { Route, Routes, Router, Outlet, Navigate } from "react-router-dom";
 // import ItemMain from "./components/item/itemMain";
 import TodoTemplate from "./todo/TodoTemplate";
 import Header from "./components/layout/Header";
@@ -7,8 +7,8 @@ import Footer from "./components/layout/Footer";
 import Join from "./components/user/Join";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Snowfall from 'react-snowfall'
-
-
+import Login from "./components/user/Login";
+import AppRouter from "./router/AppRouter";
 
 
 
@@ -30,8 +30,8 @@ function App() {
   }
 /> */}
       <Header/>
-      
-      <Join/>
+  
+      {/* <Join/> */}
       {/* <TodoTemplate/> */}
       <Footer/>
     </>
